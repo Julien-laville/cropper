@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+IMG {
+  user-select: none;
+}
+
+.source_img {
+  width: 400px;
+  height: 400px;
+  background-size: cover;  
+}
+
+.crop_preview__container {
+  position: relative;
+}
+
+.crop_preview__large {
+  width: 300px
+}
+
+.crop__zone {
+  position: absolute;
+  transition: border-color .2s;
+  cursor: grab;
+  cursor: -webkit-grab;
+  cursor:-moz-grab;
+  border: 2px dashed rgba(255, 255, 255, 0.25);
+  box-shadow: 10px 10px 0 2000px rgba(0,0,0,0.75);
+}
+
+.crop__zone--active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  cursor:-moz-grabbing;
+  border: 2px dashed rgba(255, 255, 255, 0.65);
+
+}
+
+.crop__zone__handle {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  transition: background-color .2s;
+  background: #fff;
+  border-radius: 50%;
+  cursor: move;
+  width: 30px;
+  height: 30px;
+
+}
+
+.crop__zone__handle:hover, .crop__zone__handle--active {
+  background-color: #7fb6ce;
+}
