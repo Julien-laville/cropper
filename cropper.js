@@ -89,4 +89,4 @@ function preview(x,y,w,h) {
 }
 
 
- startCropper(1)
+ startCropper()
